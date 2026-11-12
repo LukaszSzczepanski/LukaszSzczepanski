@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Dzień Niepodległości</title>
+
+<style>
+* { box-sizing: border-box; }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+
+.strona {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    border: none;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 15% 70% 15%;
+    /* Dokładnie 50% góry białe, 50% dołu czerwone */
+    background: linear-gradient(to bottom, #ffffff 50%, #dc143c 50%);
+}
+
+header {
+    grid-column: 1 / 4;
+    border-bottom: 5px solid black;
+    text-align: center;
+}
+
+.lewy, .srodek, .prawy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-right: 5px solid black;
+    padding: 10px;
+}
+
+.prawy { border-right: none; }
+
+footer {
+    grid-column: 1 / 4;
+    border-top: 5px solid black;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+
+a { margin: 10px; }
+</style>
+</head>
+
+<body>
+<div class="strona">
+
+<header><h2>DZIEŃ NIEPODLEGŁOŚCI</h2></header>
+
+<div class="lewy">
+<h3>Nawigacja</h3>
+<a href="halloween.html">Halloween</a>
+<a href="niepodleglosc.html">Dzień Niepodległości</a>
+<a href="wszystkich.html">Wszystkich Świętych</a>
+<a href="index.html">Strona główna</a>
+</div>
+
+<div class="srodek">
+<h2>11 listopada</h2>
+<p>11 listopada obchodzimy Narodowe Święto
+Niepodległości. Upamiętnia ono odzyskanie
+przez Polskę niepodległości w 1918 roku,
+po 123 latach zaborów. W tym dniu wywieszamy
+flagi i uczestniczymy w uroczystościach
+patriotycznych.</p>
+</div>
+
+<div class="prawy">
+<img src="polska.jpg" width="300" height="300">
+<p>Niech żyje Polska!</p>
+</div>
+
+<footer>
+Strona o wybranych świętach
+wykonana przez Łukasza Szczepańskiego
+</footer>
+
+</div>
+</body>
+</html>
